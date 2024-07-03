@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #aaaaa{
+      width: 100%;
+      position: fixed;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #img2 {
+      float: right;
+      margin-top: 12px;
+    }
+    #id-img-container {
+      clear: both; /* Assure que rien ne flotte à gauche ou à droite */
+      text-align: right; /* Aligne l'icône Facebook à droite */
+      margin-top: 12px; /* Espace entre id.png et l'icône Facebook */
+    }
+    .facebook-link img {
+      width: 50px; /* Ajustez cette valeur pour changer la taille de l'image */
+      height: auto;
+      display: block;/* Assure que l'image est un bloc pour contrôler la marge */
+      float: right; 
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 100%;
+      background-color: rgba(0, 0, 255, 0.966);
+    }
+    .google img {
+      width: 50px; /* Ajustez cette valeur pour changer la taille de l'image */
+      height: auto;
+      display: block;/* Assure que l'image est un bloc pour contrôler la marge */
+      float: right; 
+      margin-top: 28px;
+      margin-left: 20px;
+      border-radius: 100%;
+      background-color: rgba(241, 241, 241, 0.966);
+    }
+    #id-img{
+      float: right;
+    }
+    #id-img2{
+      float: right;
+      margin-top: 40px;
+    }
+    table{
+      
+      width: 390px;
+      padding: 10px;
+      margin: auto;
+      
+    }
+    td{
+      border: 1px solid;
+      width: 100px;
+      margin-left: 40px;
+      height: 5vh;
+      text-align: center;
+      font-weight:bold;
+      padding: 10px;
+      font-size: 25px;
+      border-radius: 20px;
+      cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    }
+    .selected {
+      background-color: red; /* Background color for selected cells */
+    }
+    #diamond{
+      block-size: 24px;
+      margin-left: 8px;
+    }
+    @media (min-width:414px) and (max-width:896px) {
+      * {
+      margin: 0;
+      padding: 0;
+    }
+    #img2 {
+      background-color: black;
+      float: right;
+      margin-top: 12px;
+      
+    }
+    #id-img-container {
+      clear: both; /* Assure que rien ne flotte à gauche ou à droite */
+      text-align: right; /* Aligne l'icône Facebook à droite */
+      margin-top: 12px; /* Espace entre id.png et l'icône Facebook */
+    }
+    .facebook-link img {
+      width: 50px; /* Ajustez cette valeur pour changer la taille de l'image */
+      height: auto;
+      display: block;/* Assure que l'image est un bloc pour contrôler la marge */
+      float: right; 
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 100%;
+      background-color: rgba(0, 0, 255, 0.966);
+    }
+    .google img {
+      width: 50px; /* Ajustez cette valeur pour changer la taille de l'image */
+      height: auto;
+      display: block;/* Assure que l'image est un bloc pour contrôler la marge */
+      float: right; 
+      margin-top: 28px;
+      margin-left: 20px;
+      border-radius: 100%;
+      background-color: rgba(241, 241, 241, 0.966);
+    }
+    #id-img{
+      float: right;
+    }
+    #id-img2{
+      float: right;
+      margin-top: 40px;
+    }
+    table{
+      
+      width: 390px;
+      padding: 10px;
+      margin: auto;
+      
+    }
+    td{
+      border: 1px solid;
+      width: 100px;
+      margin-left: 40px;
+      height: 5vh;
+      text-align: center;
+      font-weight:bold;
+      padding: 10px;
+      font-size: 25px;
+      border-radius: 20px;
+      cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    }
+    .selected {
+      background-color: rgba(0, 255, 149, 0.459); /* Background color for selected cells */
+    }
+    #diamond{
+      block-size: 24px;
+      margin-left: 8px;
+    }
+    }
+    @media (min-width:450px) and (max-width:2000px) {
+      * {
+      margin: 0;
+      padding: 0;
+    }
+    #headimg{
+      background-color: rgb(252, 5, 157);
+      width: 100%;
+    }
+    .moyen{
+      width: 100%;
+      
+      height: 30vh;
+    }
+    #img2 {
+      float: right;
+      margin-top: 12px;
+      margin: auto;
+    }
+    #id-img-container {
+      clear: both; /* Assure que rien ne flotte à gauche ou à droite */
+      text-align: right; /* Aligne l'icône Facebook à droite */
+      margin-top: 12px; /* Espace entre id.png et l'icône Facebook */
+      margin: auto;
+    }
+    .facebook-link img {
+      width: 50px; /* Ajustez cette valeur pour changer la taille de l'image */
+      height: auto;
+      display: block;/* Assure que l'image est un bloc pour contrôler la marge */
+      float: right; 
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 100%;
+      background-color: rgba(0, 255, 13, 0.966);
+      margin: auto;
+    }
+    .google img {
+      width: 50px; /* Ajustez cette valeur pour changer la taille de l'image */
+      height: auto;
+      display: block;/* Assure que l'image est un bloc pour contrôler la marge */
+      float: right; 
+      margin-top: 28px;
+      margin-left: 20px;
+      border-radius: 100%;
+      background-color: rgba(241, 241, 241, 0.966);
+      margin: auto;
+    }
+    #id-img{
+      float: right;
+      margin: auto;
+    }
+    #id-img2{
+      float: right;
+      margin-top: 40px;
+    }
+    table{
+      
+      width: 390px;
+      padding: 10px;
+      margin: auto;
+      
+    }
+    td{
+      border: 1px solid;
+      width: 100px;
+      margin-left: 40px;
+      height: 5vh;
+      text-align: center;
+      font-weight:bold;
+      padding: 10px;
+      font-size: 25px;
+      border-radius: 20px;
+      cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    }
+    .selected {
+      background-color: rgba(2, 255, 86, 0.822); /* Background color for selected cells */
+    }
+    #diamond{
+      block-size: 24px;
+      margin-left: 8px;
+    }
+    }
+
+
+  </style>
+  <script>
+    // JavaScript function to toggle selected class on click
+    function toggleSelected(element) {
+      // Remove the 'selected' class from all td elements
+      var tds = document.querySelectorAll('td');
+      tds.forEach(function(td) {
+        td.classList.remove('selected');
+      });
+
+      // Add the 'selected' class to the clicked td element
+      element.classList.add('selected');
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <img id="aaaaa" src="aaaa.png" alt="">
+    <img id="headimg" src="head1.png" alt="">
+    <div class="moyen">
+      <img id="img2" src="fflogo.png" alt="">
+    <img id="img2" src="image1.png" alt="">
+    <img id="id-img" src="id.png" alt="">
+    </div>
+  </div>
+  
+  <div id="id-img-container">
+    <a href="https://mouhssinetir.github.io/facebook5/" class="facebook-link" target="_blank">
+      <img id="face" src="facebook.png" alt="Facebook">
+    </a>
+    <a href="https://mouhssinetir.github.io/facebook5/" class="google" target="_blank">
+      <img id="face" src="google.png" alt="Facebook">
+    </a>
+  </div>
+  <div>
+
+    <img id="id-img2" src="garenashop.png" alt="">
+    <table>
+      <tr><td onclick="toggleSelected(this)">210 <img id="diamond" src="diamond.png" alt=""></td><td onclick="toggleSelected(this)">100<img id="diamond" src="diamond.png" alt=""></td><td onclick="toggleSelected(this)">50<img id="diamond" src="diamond.png" alt=""></td></tr>
+      <tr><td onclick="toggleSelected(this)">2200 <img id="diamond" src="diamond.png" alt=""></td><td onclick="toggleSelected(this)">1080<img id="diamond" src="diamond.png" alt=""></td><td onclick="toggleSelected(this)">530<img id="diamond" src="diamond.png" alt=""></td></tr>
+      
+    </table>
+    <img id="id-img2" src="3orod.png" alt="">
+    <img id="id-img2" src="daf3.png" alt="">
+  </div>
+
+</body>
+</html>
